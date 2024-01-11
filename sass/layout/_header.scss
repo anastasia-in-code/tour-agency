@@ -9,6 +9,13 @@
   background-size: cover; /* the size of the image inside the box */
   background-position: top; /* bg position on view port size change */
 
+
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 75vh,
+    0 100%
+  ); 
   clip-path: polygon(
     0 0,
     100% 0,
