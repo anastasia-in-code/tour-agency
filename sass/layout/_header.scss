@@ -5,7 +5,7 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
   background-size: cover; /* the size of the image inside the box */
   background-position: top; /* bg position on view port size change */
   -webkit-clip-path: polygon(
@@ -21,6 +21,15 @@
     0 100%
   ); /* coordinates of bg, points going clockwise, as many as needed */
   position: relative;
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5rem), (min-width: 125rem)  {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/hero.jpg);
+  }
 
   @include respond(phone) {
     -webkit-clip-path: polygon(

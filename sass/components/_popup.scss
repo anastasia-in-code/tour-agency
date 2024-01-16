@@ -63,11 +63,39 @@
     &__text {
       column-count: 1;
     }
-    &__img:first-child {
+    &__img {
+      height: 25rem;
+      max-width: 48%;
+      display: inline-block;
+    }
+
+    &__left {
+      width: 90%;
+      margin: auto;
       margin-top: 1rem;
+      display: block;
+    }
+  
+    &__right {
+      width: 100%;
+      display: block;
+
     }
   }
 
+  @include respond(tab-port) {
+    &__img {
+      height: 15rem;
+      width: auto;
+      margin: auto;
+    }
+  }
+
+  @include respond(phone) {
+    &__img {
+      display: none;
+    }
+  }
   // OPEN MODE
   &:target {
     opacity: 1;
