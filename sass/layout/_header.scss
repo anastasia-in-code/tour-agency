@@ -22,7 +22,9 @@
   ); /* coordinates of bg, points going clockwise, as many as needed */
   position: relative;
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5rem), (min-width: 125rem)  {
+  @media (min-resolution: 192dpi) and (min-width: 37.5rem),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem),
+   (min-width: 125rem)  {
     background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
