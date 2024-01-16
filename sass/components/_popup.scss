@@ -59,6 +59,15 @@
     hyphens: auto;
   }
 
+  @include respond(tab-land) {
+    &__text {
+      column-count: 1;
+    }
+    &__img:first-child {
+      margin-top: 1rem;
+    }
+  }
+
   // OPEN MODE
   &:target {
     opacity: 1;
